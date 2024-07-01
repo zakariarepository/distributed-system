@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>Entrez le nombre à calculer son factorielle</h1>
+  <div class="input-group">
+    <input type="number" [(ngModel)]="inputNumber" class="form-control" placeholder="Enter a number">
+    <button (click)="test()" class="btn btn-primary">Submit</button>
+  </div>
+  <div *ngIf="outputNumber !== null" class="result">
+    <h2>Le résultat est: {{ outputNumber }}</h2>
+  </div>
+</div>
